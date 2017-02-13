@@ -49,7 +49,7 @@ const token = process.env.EAAFj0GL0ZAZAgBAAIylsaqZBap3NRk10Cv4zbGyrd13Nx6VINbTZB
 function sendTextMessage(sender, text) {
 	let messageData = { text:text }
 	request({
-		url: 'https://graph.facebook.com/v2.6/me/messages'
+		url: 'https://graph.facebook.com/v2.6/me/messages',
 		qs: {access_token:token},
 		method: 'POST',
 		json: {
